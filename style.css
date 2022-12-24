@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.container {
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 60vh;
+  width: 45%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.item-1 > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.item-2 {
+  padding: 2em;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(146, 144, 144);
+}
+
+.item-2 > h3 {
+  font-family: "Fraunces", serif;
+  font-size: 2em;
+  color: hsl(212, 21%, 14%);
+}
+
+.item-2 > p:nth-child(1) {
+  letter-spacing: 1em;
+}
+
+.item-2 > p > span:nth-child(1) {
+  font-family: "Fraunces", serif;
+  color: rgb(22, 160, 121);
+  font-size: 2.2em;
+}
+
+.item-2 > p > span:nth-child(2) {
+  margin-left: 2em;
+  font-size: 1.1em;
+  text-decoration: line-through;
+}
+
+.item-2 > button {
+  padding: 0.7em;
+  background-color: rgb(22, 160, 121);
+  font-size: 1.1em;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
